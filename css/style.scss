@@ -295,3 +295,25 @@ section.services{
 }
 
 /**/
+
+/*SECTION RESUME*/
+
+section.resume{
+    .resume__info{
+        
+        .tab-options{
+            .column-icons{
+                display: flex;
+                flex-direction: column;
+                
+                i{
+                    color: white;
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+/**/

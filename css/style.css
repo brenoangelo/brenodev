@@ -335,4 +335,22 @@ section.services .services__items .item-single:nth-of-type(6) {
 }
 
 /**/
+/*SECTION RESUME*/
+section.resume .resume__info .tab-options .column-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.resume .resume__info .tab-options .column-icons i {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/**/
 /*# sourceMappingURL=style.css.map */
