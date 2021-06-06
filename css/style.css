@@ -616,11 +616,19 @@ section.contact .overlay .form-elements .form-container {
       -ms-flex: 1;
           flex: 1;
   margin-left: 15px;
-  background-color: #161d26;
+  background-color: #1f2935;
   -webkit-box-shadow: 0px 4px 15px 5px rgba(170, 184, 212, 0.06);
           box-shadow: 0px 4px 15px 5px rgba(170, 184, 212, 0.06);
   padding: 65px 10px;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+
+section.contact .overlay .form-elements .form-container h5 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #0abead;
+  text-align: left;
+  margin-left: 40px;
 }
 
 section.contact .overlay .form-elements .form-container form {
@@ -636,31 +644,29 @@ section.contact .overlay .form-elements .form-container form {
           align-items: center;
 }
 
-section.contact .overlay .form-elements .form-container form h5 {
-  font-size: 25px;
-  margin-bottom: 15px;
-  color: #0abead;
-}
-
 section.contact .overlay .form-elements .form-container form input {
+  background-color: #161d26;
+  color: #aab8d4;
   padding-left: 12px;
   font-size: 18px;
   line-height: 45px;
   width: 100%;
   max-width: 500px;
   margin-bottom: 10px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 0;
 }
 
 section.contact .overlay .form-elements .form-container form textarea {
+  background-color: #161d26;
+  color: #aab8d4;
   padding: 12px;
   font-size: 18px;
   width: 100%;
   max-width: 500px;
   height: 100px;
   resize: none;
-  border-radius: 25px;
+  border-radius: 10px;
   border: 0;
 }
 
@@ -669,6 +675,7 @@ section.contact .overlay .form-elements .form-container form button.btn-blue {
   width: 100%;
   max-width: 500px;
   margin: 10px;
+  border-radius: 10px;
 }
 
 section.contact video {
