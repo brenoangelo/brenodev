@@ -913,6 +913,10 @@ footer{
 
 @media screen and (max-width:768px){
 
+    body{
+        scroll-behavior: smooth;
+    }
+
     .container-slider{
         .container-slider-single{
             img{
