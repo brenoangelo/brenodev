@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variaveis*/
 /*Resets*/
 * {
@@ -11,6 +12,16 @@
 body, html {
   height: 100%;
   background-color: #161d26;
+}
+
+*::-moz-selection {
+  background: #0abead;
+  color: white;
+}
+
+*::selection {
+  background: #0abead;
+  color: white;
 }
 
 /*Uilities*/
@@ -35,6 +46,22 @@ p {
 
 input:focus, textarea:focus, button:focus {
   outline: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+  background: #1f2935;
+}
+
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+  background: #0abead;
 }
 
 .social-media {

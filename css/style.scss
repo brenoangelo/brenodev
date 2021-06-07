@@ -7,11 +7,32 @@
 *{margin: 0; padding: 0; box-sizing: border-box;font-family: 'Poppins', sans-serif;}
 body,html{height: 100%; background-color: $azul-escuro;}
 
+*::selection {
+    background: $azul-claro;
+    color: white;
+}
+
 /*Uilities*/
 .container{max-width: 1280px;width: 100%; margin: 0 auto; padding: 0 2%;}
 h2{font-size: 48px; color:$azul-claro;font-weight: bold;}
 p{font-size: 16px;color:$branco-gelo;font-weight: regular;}
 input:focus,textarea:focus,button:focus{outline: 0;}
+
+*::-webkit-scrollbar {
+    width:15px;
+    height: 15px;
+    }
+     
+    /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+    ::-webkit-scrollbar-track {
+    background:$azul-medio;
+    }
+     
+    /* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor azul clara nela*/
+    ::-webkit-scrollbar-thumb {
+    background: $azul-claro;
+    }
 
 .social-media{
     display: flex;
