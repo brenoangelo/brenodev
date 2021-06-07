@@ -720,6 +720,10 @@ li.slick-active button {
 /*FIM SLICK SLIDER*/
 /*SECTION CONTACT*/
 section.contact {
+  background-image: url("../images/cafe-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 1;
   min-height: 700px;
@@ -767,10 +771,7 @@ section.contact .overlay .form-elements .form-container {
       -ms-flex: 1;
           flex: 1;
   margin-left: 15px;
-  background-color: #1f2935;
-  -webkit-box-shadow: 0px 4px 15px 5px rgba(170, 184, 212, 0.06);
-          box-shadow: 0px 4px 15px 5px rgba(170, 184, 212, 0.06);
-  padding: 65px 10px;
+  padding: 20px 10px;
   border-radius: 10px;
 }
 
@@ -983,6 +984,13 @@ footer .container .social-media a i:hover {
 }
 
 @media screen and (max-width: 768px) {
+  section.contact video {
+    display: none;
+    width: 400%;
+  }
+  section.contact .overlay {
+    background-color: rgba(22, 29, 38, 0.7);
+  }
   body {
     scroll-behavior: smooth;
   }
