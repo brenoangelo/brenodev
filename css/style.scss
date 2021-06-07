@@ -130,14 +130,7 @@ input:focus,textarea:focus,button:focus{outline: 0;}
     width: 100%;
     text-align: center;
 
-    .btn-fechar-menu{
-        position: relative;
-        left: 46%;
-        top: 0;
-        font-size: 50px;
-        color: $branco-gelo;
-        cursor: pointer;
-    }
+    
     .btn-fechar-menu:hover{
         transition: 0.3s;
         color: white;
@@ -145,19 +138,20 @@ input:focus,textarea:focus,button:focus{outline: 0;}
     ul{
         flex-direction: column;
         position: absolute;
+        width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         
-        /*display: none;*/
+        
         li{
             list-style-type: none;
 
             a{
                 color: $branco-gelo;
                 text-decoration: none;
-                font-size: 60px;
-                line-height: 150px;
+                font-size: 40px;
+                line-height: 100px;
             }
             a:hover{
                 transition: 0.3s;

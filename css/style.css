@@ -155,15 +155,6 @@ input:focus, textarea:focus, button:focus {
   text-align: center;
 }
 
-.menu-mobile-ul .btn-fechar-menu {
-  position: relative;
-  left: 46%;
-  top: 0;
-  font-size: 50px;
-  color: #aab8d4;
-  cursor: pointer;
-}
-
 .menu-mobile-ul .btn-fechar-menu:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -176,11 +167,11 @@ input:focus, textarea:focus, button:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  /*display: none;*/
 }
 
 .menu-mobile-ul ul li {
@@ -190,8 +181,8 @@ input:focus, textarea:focus, button:focus {
 .menu-mobile-ul ul li a {
   color: #aab8d4;
   text-decoration: none;
-  font-size: 60px;
-  line-height: 150px;
+  font-size: 40px;
+  line-height: 100px;
 }
 
 .menu-mobile-ul ul li a:hover {

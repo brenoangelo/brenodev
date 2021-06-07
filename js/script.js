@@ -12,7 +12,9 @@ $(()=>{
                 $('.logo h1').css('color', '#0abead')
             })
 
-            
+            $('ul > li > a').click(()=>{
+                ulMenu.slideUp()
+            })
 
         })
     /* */
