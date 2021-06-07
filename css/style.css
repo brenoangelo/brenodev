@@ -16,6 +16,7 @@ body, html {
 /*Uilities*/
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 2%;
 }
@@ -81,7 +82,8 @@ input:focus, textarea:focus, button:focus {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 2px;
   background-color: #0abead;
 }
@@ -100,6 +102,7 @@ input:focus, textarea:focus, button:focus {
 }
 
 .btn-blue {
+  width: 100%;
   text-decoration: none;
   cursor: pointer;
   font-size: 16px;
@@ -118,6 +121,7 @@ input:focus, textarea:focus, button:focus {
 }
 
 .btn-orange {
+  width: 100%;
   text-decoration: none;
   cursor: pointer;
   font-size: 16px;
@@ -545,7 +549,7 @@ section.resume .resume__info .tab-options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 370px;
+  width: 100%;
   background-color: #161d26;
   margin-right: 70px;
 }
@@ -598,6 +602,7 @@ section.resume .resume__info .tab-options .column-text li span.circle {
 
 section.resume .resume__info .tab-info {
   border-left: 2px solid #0abead;
+  width: 100%;
   padding-left: 30px;
 }
 
@@ -975,6 +980,12 @@ footer .container .social-media a i:hover {
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 14px;
+  }
   header .container nav.menu-desktop {
     display: none;
   }
@@ -1015,12 +1026,15 @@ footer .container .social-media a i:hover {
     color: #161d26;
   }
   section.bg {
-    min-height: auto;
-    height: 100%;
+    height: auto;
   }
   section.bg .container .bg__texto {
     width: 100%;
     text-align: center;
+    padding: 150px 0;
+  }
+  section.bg .container .bg__texto h1 {
+    font-size: 35px;
   }
   section.bg .container .bg__texto .social-media {
     width: 100%;
@@ -1030,6 +1044,9 @@ footer .container .social-media a i:hover {
     position: absolute;
     left: 0;
     width: 250%;
+  }
+  section.about {
+    padding: 30px 0;
   }
   section.about .about__info {
     -webkit-box-orient: vertical;
@@ -1079,6 +1096,30 @@ footer .container .social-media a i:hover {
     width: 100%;
     max-width: 600px;
     margin: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  section.bg video {
+    width: 500%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn-blue, .btn-orange {
+    display: block;
+    max-width: 200px;
+    margin: 15px auto;
+  }
+  section.bg {
+    top: 0;
+  }
+  section.contact video {
+    width: 400%;
+  }
+  section.contact .overlay .container .form-elements {
+    bottom: 90px;
+    padding: 70px 0;
   }
 }
 
