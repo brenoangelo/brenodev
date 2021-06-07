@@ -183,6 +183,7 @@ header{
         .logo{
             
             h1{
+                font-weight: 900;
                 transition: 0.3s;
                 color:$azul-claro;
             }
@@ -192,8 +193,6 @@ header{
             
             ul{
                 display: flex;
-                margin-top: 8px;
-                
                 li{ 
                     
                     margin-left: 35px;
@@ -205,6 +204,7 @@ header{
                         font-size: 16px;
                     }
                     a:hover{
+                        transition: 0.3s;
                         color:$azul-claro;
                     }
                 }
@@ -343,7 +343,6 @@ section.bg{
             }
             
         }
-
         
     }
     
@@ -356,7 +355,6 @@ section.bg{
 section.about{
 
     padding: 60px 0;
-
 
     .about__info{
         display: flex;
@@ -593,18 +591,10 @@ section.portfolio{
     padding: 40px 0;
     .container-slider-single{
         float: left;
-        background-color: white;
+        background-color: rgba(0,0,0,0);
         text-align: center;
         padding: 15px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 15px 5px rgba(170,184,212,0.05);
-        
-
-        p{
-            margin: 15px 0;
-            color: #7e92ac;
-            font-size: 14px;
-        }
+    
     }
 }
 
@@ -641,13 +631,7 @@ li.slick-active button{
     color: #373855;
 }
 
-.slick-slide {
-    margin-left: 27px;
-}
 
-.slick-list{
-    margin-left: -27px;
-}
 
 /*FIM SLICK SLIDER*/
 
@@ -934,6 +918,22 @@ footer{
 }
 
 @media screen and (max-width:768px){
+
+    .container-slider{
+        .container-slider-single{
+            img{
+                width: 100%;
+            }
+        
+        }
+    }
+    .slick-slide {
+        margin-left: 0px;
+    }
+    
+    .slick-list{
+        margin-left: 0px;
+    }
     
     
     h2{font-size: 35px;}
@@ -1054,7 +1054,6 @@ footer{
 @media screen and (max-width:450px){
     .btn-blue,.btn-orange{
         display: block;
-        
         max-width: 200px;
         margin: 15px auto;
     }
