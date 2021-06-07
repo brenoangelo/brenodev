@@ -16,47 +16,72 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="menu-mobile-ul">
+        <div class="btn-fechar-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="#about">Quem sou</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div><!--menu-mobile-ul-->
     <header>
         <div class="container">
             <div class="logo">
                 <h1>BrenoDev</h1>
             </div><!--logo-->
 
-            <nav>
+            <nav class="menu-desktop">
+                
                 <ul>
-                    <li><a href="#">Quem sou</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#about">Quem sou</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contato</a></li>
                 </ul>
+            </nav>
+
+            <nav class="menu-mobile">
+                <a class="btn-hamb"><i class="fas fa-bars"></i></a>
+                
             </nav>
         </div><!--container-->
     </header>
 
     <section class="bg">
-        <div class="container">
-            <div class="bg__texto">
-                <h3>Olá, meu nome é <span>Breno Angelo</span></h3>
-                <h1>Desenvolvedor Front-end</h1>
-                <p>Freelancer Web / Desenvolvedor Front-end / </p>
+        <video autoplay muted loop>
+            <source src="./images/bg-video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="container">
+                <div class="bg__texto">
+                    <h3>Olá, meu nome é <span>Breno Angelo</span></h3>
+                    <h1>Desenvolvedor Front-end</h1>
+                    <p>Freelancer Web / Desenvolvedor Front-end / </p>
 
-                <a class="btn-blue">Quem sou</a>
-                <a class="btn-orange">Resumo</a>
+                    <a href="#about" class="btn-blue">Quem sou</a>
+                    <a href="#resume" class="btn-orange">Resumo</a>
 
-                
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/brenoangelo1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/brenoangelo" target="_blank"><i class="fab fa-github" ></i></a>
+                        <a href="https://www.linkedin.com/in/breno-angelo-1005/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div><!--social-media-->
 
-            </div><!--bg__texto-->
+                </div><!--bg__texto-->
 
-            <div class="bg__imagem">
-                <div class="social-media">
-                    <a href="https://www.instagram.com/brenoangelo1/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/brenoangelo" target="_blank"><i class="fab fa-github" ></i></a>
-                    <a href="https://www.linkedin.com/in/breno-angelo-1005/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div><!--social-media-->
-            </div><!--bg__imagem-->
-        </div><!--container-->
+                <div class="bg__imagem">
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/brenoangelo1/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/brenoangelo" target="_blank"><i class="fab fa-github" ></i></a>
+                        <a href="https://www.linkedin.com/in/breno-angelo-1005/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div><!--social-media-->
+                </div><!--bg__imagem-->
+            </div><!--container-->
+        </div><!--overlay-->
     </section><!--bg-->
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
 
             <div class="title-section">
@@ -91,8 +116,8 @@
                         <li><img src="https://img.icons8.com/material/24/f57f17/adobe-photoshop--v1.png"/>&nbsp;PhotoShop</li>
                     </ul>
 
-                    <a class="btn-blue">Quem sou</a>
-                    <a class="btn-orange">Resumo</a>
+                    <a href="#about" class="btn-blue">Quem sou</a>
+                    <a href="#resume" class="btn-orange">Resumo</a>
 
                 </div><!--info__text-->
 
@@ -170,7 +195,7 @@
         </div><!--container-->
     </section><!--services-->
 
-    <section class="resume">
+    <section class="resume" id="resume">
         <div class="container">
             <div class="title-section">
 
@@ -226,7 +251,7 @@
         </div><!--container-->
     </section><!--resume-->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="title-section">
 
@@ -251,7 +276,7 @@
         </div><!--container-->
     </section><!--portfolio-->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="overlay">
             <div class="container">
                 <div class="form-elements">
@@ -295,8 +320,10 @@
         </div><!--container-->
     </footer>
 
+    <!--JQuery e JS-->
     <script src="js/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
