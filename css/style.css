@@ -240,7 +240,11 @@ header .container {
           align-items: center;
 }
 
-header .container .logo h1 {
+header .container .logo a {
+  text-decoration: none;
+}
+
+header .container .logo a h1 {
   font-weight: 900;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1037,7 +1041,7 @@ footer .container .social-media a i:hover {
         -ms-flex-order: 1;
             order: 1;
     line-height: 45px;
-    font-size: 18px;
+    font-size: 14px;
   }
   footer .container .social-media {
     display: -webkit-box;

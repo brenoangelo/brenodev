@@ -196,12 +196,15 @@ header{
         align-items: center;
 
         .logo{
-            
-            h1{
-                font-weight: 900;
-                transition: 0.3s;
-                color:$azul-claro;
+            a{
+                text-decoration: none;
+                h1{
+                    font-weight: 900;
+                    transition: 0.3s;
+                    color:$azul-claro;
+                }
             }
+            
         }
 
         nav{
@@ -995,7 +998,7 @@ footer{
             p{
                 order: 1;
                 line-height: 45px;
-                font-size: 18px;
+                font-size: 14px;
             }
     
             .social-media{
