@@ -8,8 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#1f2935">
     <meta name="msapplication-navbutton-color" content="#1f2935">
 
-
-
     <title>Breno - portfolio</title>
 
     <link rel="shortcut icon" href="./images/breno-logo-favicon.png">
@@ -299,12 +297,12 @@
 
                     <div class="form-container">
                         <h5>Preencha Corretamente</h5>
-                        <form action="post">
-                            
-                            <input type="text" placeholder="Seu nome...">
-                            <input type="email" placeholder="Seu e-mail...">
-                            <textarea placeholder="Sua mensagem..."></textarea>
-                            <button class="btn-blue">Enviar!</button>
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <input type="hidden" name="accessKey" value="6fedaebd-61f6-4b57-9191-fc26c8f99c23">
+                            <input type="text" name="name" placeholder="Seu nome...">
+                            <input type="email" name="email" placeholder="Seu e-mail...">
+                            <textarea name="message" placeholder="Sua mensagem..."></textarea>
+                            <button type="submit" class="btn-blue">Enviar!</button>
                         </form>
                     </div><!--form-container-->
 
