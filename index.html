@@ -30,6 +30,7 @@
         </ul>
     </div><!--menu-mobile-ul-->
     <header>
+
         <div class="container">
             <div class="logo">
                 <a href="/"><h1>BrenoDev.</h1></a>
@@ -70,7 +71,7 @@
                         <a href="https://github.com/brenoangelo" target="_blank"><i class="fab fa-github" ></i></a>
                         <a href="https://www.linkedin.com/in/breno-angelo-1005/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div><!--social-media-->
-
+                    
                 </div><!--bg__texto-->
 
                 <div class="bg__imagem">
@@ -199,6 +200,7 @@
     </section><!--services-->
 
     <section class="resume" id="resume">
+        <div class="bg-shape"></div><!--bg-shape-->
         <div class="container">
             <div class="title-section">
 
@@ -252,6 +254,8 @@
                     </div><!--info-single-->
 
                     
+
+                    
                 </div><!--tab-info-->
             </div><!--resume__info-->
         </div><!--container-->
@@ -297,12 +301,14 @@
 
                     <div class="form-container">
                         <h5>Preencha Corretamente</h5>
-                        <form action="https://api.staticforms.xyz/submit" method="post">
+                        <form id="staticform" action="https://api.staticforms.xyz/submit" method="post">
                             <input type="hidden" name="accessKey" value="6fedaebd-61f6-4b57-9191-fc26c8f99c23">
                             <input type="text" name="name" placeholder="Seu nome...">
                             <input type="email" name="email" placeholder="Seu e-mail...">
                             <textarea name="message" placeholder="Sua mensagem..."></textarea>
+                            <input type="hidden" name="redirectTo" value="https://brenoangelo.github.io/brenodev"> <!-- Optional -->
                             <button type="submit" class="btn-blue">Enviar!</button>
+                            
                         </form>
                     </div><!--form-container-->
 

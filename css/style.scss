@@ -134,6 +134,8 @@ input:focus,textarea:focus,button:focus{outline: 0;}
     -webkit-box-shadow: 0px 11px 15px 5px rgba(245,127,23,0.25); 
     box-shadow: 0px 11px 15px 5px rgba(245,127,23,0.25);
 }
+
+
 /**/
 
 
@@ -182,6 +184,27 @@ input:focus,textarea:focus,button:focus{outline: 0;}
         }
     }
 }
+.btn-theme{
+    z-index: 1000;
+    position: fixed;
+    top: 30px;
+    right: 55px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn-theme i{
+    color: white;
+    font-size: 22px;
+}
+
+.btn-theme:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+}
 header{
     width: 100%;
     z-index: 999;
@@ -190,6 +213,9 @@ header{
     padding: 22px 0;
     
     background-color: $azul-medio;
+
+    
+
     .container{
         display: flex;
         justify-content: space-between;
@@ -273,8 +299,7 @@ section.bg{
         width: 100%;
         height: 100%;
         background-color: rgba(11, 40, 66, 0.5);
-
-        background-image: url('../images/Shape.png');
+        background-image: url('../images/shape.svg');
         background-repeat: no-repeat;
         background-position: center 110%;
     }
@@ -493,12 +518,23 @@ section.services{
 /*SECTION RESUME*/
 
 section.resume{
-    padding: 270px 0;
     
-    background-image: url('../images/shape2.png');
+    padding: 200px 0;
+    /*background-image:url('../images/shape2.png');
     background-size: cover;
-    background-position: right -25px;
+    background-position: right -25px;*/
+    
+    .bg-shape{
+        position: absolute;
+        
+        z-index: -1;
+        width: 99.8%;
+        height: 60vh;
+        background-color: $azul-medio;
+        transform: skew(-5deg) rotate(-5deg);
+    }
     .resume__info{
+        
         display: flex;
         
         .tab-options{

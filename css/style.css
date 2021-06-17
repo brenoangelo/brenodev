@@ -167,6 +167,53 @@ input:focus, textarea:focus, button:focus {
   box-shadow: 0px 11px 15px 5px rgba(245, 127, 23, 0.25);
 }
 
+/*CLASSE TEMA*/
+.bg-white {
+  background-color: white !important;
+}
+
+.bg-white p {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-white .about__info {
+  background-color: white !important;
+  -webkit-box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25);
+  box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25);
+}
+
+.bg-white .about__info .info__text {
+  background-color: white !important;
+}
+
+.bg-white .about__info li {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bg-white .bg-shape {
+  -webkit-box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
+          box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
+  background-color: white !important;
+}
+
+.bg-white .tab-options {
+  background-color: white !important;
+  -webkit-box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
+          box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
+}
+
+.bg-white .tab-options li {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bg-white .tab-options li:first-child {
+  color: white !important;
+}
+
+.bg-white h4 {
+  color: #0abead !important;
+}
+
 /**/
 /*ESTILIZANDO HEADER*/
 .menu-mobile-ul {
@@ -217,6 +264,30 @@ input:focus, textarea:focus, button:focus {
   transition: 0.3s;
   text-decoration: underline;
   color: white;
+}
+
+.btn-theme {
+  z-index: 1000;
+  position: fixed;
+  top: 30px;
+  right: 55px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-theme i {
+  color: white;
+  font-size: 22px;
+}
+
+.btn-theme:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 header {
@@ -317,7 +388,7 @@ section.bg .overlay {
   width: 100%;
   height: 100%;
   background-color: rgba(11, 40, 66, 0.5);
-  background-image: url("../images/Shape.png");
+  background-image: url("../images/shape.svg");
   background-repeat: no-repeat;
   background-position: center 110%;
 }
@@ -557,10 +628,20 @@ section.services .services__items .item-single:nth-of-type(6) {
 /**/
 /*SECTION RESUME*/
 section.resume {
-  padding: 270px 0;
-  background-image: url("../images/shape2.png");
-  background-size: cover;
-  background-position: right -25px;
+  padding: 200px 0;
+  /*background-image:url('../images/shape2.png');
+    background-size: cover;
+    background-position: right -25px;*/
+}
+
+section.resume .bg-shape {
+  position: absolute;
+  z-index: -1;
+  width: 99.8%;
+  height: 60vh;
+  background-color: #1f2935;
+  -webkit-transform: skew(-5deg) rotate(-5deg);
+          transform: skew(-5deg) rotate(-5deg);
 }
 
 section.resume .resume__info {
