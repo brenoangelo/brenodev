@@ -30,8 +30,16 @@ $(()=>{
             scrollTop: targetOffset - 100
         }, 500);
     });
-
-
         
     /* */
+
+    setTimeout(()=>{
+        $('.btn-whats').animate({
+            height: "60px",
+            width: "60px"
+        })
+
+        $('.btn-whats a').fadeIn()
+        
+    },2000)
 })

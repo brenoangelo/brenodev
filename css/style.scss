@@ -205,6 +205,36 @@ input:focus,textarea:focus,button:focus{outline: 0;}
     transition: 0.3s;
     transform: scale(1.2);
 }
+
+.btn-whats{
+    cursor: pointer;
+    background-color: #25D366;
+    z-index: 999;
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+   
+    width: 0;
+    height: 0;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 9px 15px 5px rgba(0,0,0,0.20); 
+    box-shadow: 3px 9px 15px 5px rgba(0,0,0,0.20);
+
+    a{
+        display: none;
+        text-decoration: none;
+        color: white;
+        i{
+            line-height: 60px;
+            font-size: 40px;
+        }
+    }
+}
+
+
+
 header{
     width: 100%;
     z-index: 999;
@@ -214,6 +244,8 @@ header{
     
     background-color: $azul-medio;
 
+    -webkit-box-shadow: 3px 9px 15px 5px rgba(0,0,0,0.35); 
+    box-shadow: 3px 9px 15px 5px rgba(0,0,0,0.35);
     
 
     .container{
@@ -473,6 +505,7 @@ section.services{
             align-items: center;
             margin: 20px;
             padding: 65px 30px;
+            
             color: white;
             box-shadow: 0px 4px 15px 5px rgba(170,184,212,0.10);
             i{
@@ -544,7 +577,9 @@ section.resume{
             background-color: $azul-escuro;
             margin-right: 70px;
             
+            
             .column-icons{
+                
                 display: flex;
                 flex-direction: column;
                 background-color: $azul-claro;
@@ -560,14 +595,22 @@ section.resume{
             }
 
             .column-text{
+                cursor: pointer;
                 padding: 34px 0;
+                .tab-active{
+                    background-color: #0abead;
+                    color:white;
+                }
+                
                 li{
+                    
                     font-size: 18px;
                     list-style-type: none;
                     color: $branco-gelo;
                     padding-right: 15px;
                     line-height: 45px;
                     border-radius: 0 25px 25px 0;
+                    
                     span.circle{
                         position: relative;
                         top: 0;
@@ -578,6 +621,7 @@ section.resume{
                         display: inline-block;
                         border-radius: 0 25px 25px 0;
                     }
+                    
                 }
 
                 
@@ -618,10 +662,29 @@ section.resume{
                     }
                 }
 
+                li{
+                    list-style-type: none;
+                    margin: 15px 0;
+                    background-color: $branco-gelo;
+                    color: white;
+
+                    span{
+                        padding: 5px;
+                        display: block;
+                        background-color: $azul-claro;
+                    }
+                }
+
                 h5{
                     margin: 5px 0;
                     font-size: 16px;
                     color: $branco-gelo;
+                }
+
+                small{
+                    line-height: 45px;
+                    color: $laranja;
+                    font-weight: bold;
                 }
 
             }

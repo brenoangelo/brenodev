@@ -167,53 +167,6 @@ input:focus, textarea:focus, button:focus {
   box-shadow: 0px 11px 15px 5px rgba(245, 127, 23, 0.25);
 }
 
-/*CLASSE TEMA*/
-.bg-white {
-  background-color: white !important;
-}
-
-.bg-white p {
-  color: rgba(0, 0, 0, 0.8);
-}
-
-.bg-white .about__info {
-  background-color: white !important;
-  -webkit-box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25);
-  box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25);
-}
-
-.bg-white .about__info .info__text {
-  background-color: white !important;
-}
-
-.bg-white .about__info li {
-  color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.bg-white .bg-shape {
-  -webkit-box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
-          box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
-  background-color: white !important;
-}
-
-.bg-white .tab-options {
-  background-color: white !important;
-  -webkit-box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
-          box-shadow: 11px 8px 23px 1px rgba(10, 190, 173, 0.25) !important;
-}
-
-.bg-white .tab-options li {
-  color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.bg-white .tab-options li:first-child {
-  color: white !important;
-}
-
-.bg-white h4 {
-  color: #0abead !important;
-}
-
 /**/
 /*ESTILIZANDO HEADER*/
 .menu-mobile-ul {
@@ -290,6 +243,33 @@ input:focus, textarea:focus, button:focus {
           transform: scale(1.2);
 }
 
+.btn-whats {
+  cursor: pointer;
+  background-color: #25D366;
+  z-index: 999;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 9px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 9px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whats a {
+  display: none;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-whats a i {
+  line-height: 60px;
+  font-size: 40px;
+}
+
 header {
   width: 100%;
   z-index: 999;
@@ -297,6 +277,8 @@ header {
   top: 0;
   padding: 22px 0;
   background-color: #1f2935;
+  -webkit-box-shadow: 3px 9px 15px 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 3px 9px 15px 5px rgba(0, 0, 0, 0.35);
 }
 
 header .container {
@@ -682,7 +664,13 @@ section.resume .resume__info .tab-options .column-icons i {
 }
 
 section.resume .resume__info .tab-options .column-text {
+  cursor: pointer;
   padding: 34px 0;
+}
+
+section.resume .resume__info .tab-options .column-text .tab-active {
+  background-color: #0abead;
+  color: white;
 }
 
 section.resume .resume__info .tab-options .column-text li {
@@ -743,10 +731,29 @@ section.resume .resume__info .tab-info .info-single .info-text-title span {
   border-radius: 25px;
 }
 
+section.resume .resume__info .tab-info .info-single li {
+  list-style-type: none;
+  margin: 15px 0;
+  background-color: #aab8d4;
+  color: white;
+}
+
+section.resume .resume__info .tab-info .info-single li span {
+  padding: 5px;
+  display: block;
+  background-color: #0abead;
+}
+
 section.resume .resume__info .tab-info .info-single h5 {
   margin: 5px 0;
   font-size: 16px;
   color: #aab8d4;
+}
+
+section.resume .resume__info .tab-info .info-single small {
+  line-height: 45px;
+  color: #f57f17;
+  font-weight: bold;
 }
 
 /**/
